@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Form Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form>
+    <div class="one">
+        
+        <div class="flex_item" id="upper_item">
+            <h1>Assignment Task</h1>
+            <span>* indicates required question</span>
+        </div>
+        
+        <div class="flex_item">
+            <p>MCQ<span>*</span></p>
+            <br>
+            <input type="radio" id="Option 1" name="Option" value="Option 1" required>
+            <label for="Option 1">Option 1</label><br>
+            <input type="radio" id="Option 2" name="Option" value="Option 2">
+            <label for="Option 2">Option 2</label><br>
+            <input type="radio" id="Option 3" name="Option" value="Option 3">
+            <label for="Option 3">Option 3</label>
+        </div>
+
+        <div class="flex_item">
+            <p>Checkbox<span>*</span></p>
+            <input type="checkbox" id="ch_1" name="ch_Option" value="Option 1" required>
+            <label for="ch_1">Option 1</label><br>
+            <input type="checkbox" id="ch_2" name="ch_Option" value="Option 2">
+            <label for="ch_2">Option 2</label><br>
+            <input type="checkbox" id="ch_3" name="ch_Option" value="Option 3">
+            <label for="ch_3">Option 3</label>
+        </div>
+
+        <div class="flex_item">
+            <p>Short Answer<span>*</span></p>
+            <input type="text" id="Short_Answer" name="Short_Answer" maxlength="100" required>
+        </div>
+
+        <div class="flex_item">
+            <p>Paragraph<span>*</span></p>
+            <textarea id="Paragraph" name="Paragraph" rows="auto" cols="70"></textarea>
+        </div>
+
+        <div class="flex_item">
+            <p>Drop down<span>*</span></p>
+            <select id="dropdown" name="dropdown" required>
+            <option value="" disabled selected hidden>Choose</option>
+            <option value="option 1">Option 1</option>
+            <option value="option 2">Option 2</option>
+            <option value="option 3">Option 3</option>
+            </select>
+        </div>
+
+        <div class="flex_item">
+            <p>File Upload<span>*</span></p>
+            <input type="file" id="myFile" name="filename" required/>
+            <label for="myFile" class="file_upload">Add File</label>
+        </div>
+
+        <div class="flex_item">
+            <p>Linear Scale<span>*</span></p>
+            <div class="grid-container">
+                <div></div>
+                <div><label for="1">1</label></div>
+                <div><label for="2">2</label></div>
+                <div><label for="3">3</label></div>
+                <div><label for="4">4</label></div>
+                <div><label for="5">5</label></div>
+                <div></div>
+                <div>Worst</div>
+                <div><input type="radio" id="1" name="op" value="op1" required></div>
+                <div><input type="radio" id="2" name="op" value="op2"></div>
+                <div><input type="radio" id="3" name="op" value="op3"></div>
+                <div><input type="radio" id="4" name="op" value="op4"></div>
+                <div><input type="radio" id="5" name="op" value="op5"></div>
+                <div>Best</div>    
+            </div>
+        </div>
+
+        <div class="flex_item">
+            <p>Multi Choice Grid<span>*</span></p>
+            <div class="grid-container1">
+                <div></div>
+                <div>Column 1</div>
+                <div>Column 2</div>
+                <div>Column 3</div>
+                <div>Row 1</div>
+                <div><input type="radio" name="mcg1" value="c1r1" required></div>
+                <div><input type="radio" name="mcg1" value="c2r1"></div>
+                <div><input type="radio" name="mcg1" value="c3r1"></div>
+                <div>Row 2</div>
+                <div><input type="radio" name="mcg2" value="c1r2" required></div>
+                <div><input type="radio" name="mcg2" value="c2r2"></div>
+                <div><input type="radio" name="mcg2" value="c3r2"></div>
+                <div>Row 3</div>
+                <div><input type="radio" name="mcg3" value="c1r3" required></div>
+                <div><input type="radio" name="mcg3" value="c2r3"></div>
+                <div><input type="radio" name="mcg3" value="c3r3"></div>
+            </div>
+        </div>
+
+        <div class="flex_item">
+            <p>Tick box Grid<span>*</span></p>
+            <div class="grid-container2">
+                <div></div>
+                <div>Column 1</div>
+                <div>Column 2</div>
+                <div>Column 3</div>
+                <div>Row 1</div>
+                <div><input type="checkbox" name="tbg1" value="c1r1" required></div>
+                <div><input type="checkbox" name="tbg1" value="c2r1"></div>
+                <div><input type="checkbox" name="tbg1" value="c3r1"></div>
+                <div>Row 2</div>
+                <div><input type="checkbox" name="tbg2" value="c1r2" required></div>
+                <div><input type="checkbox" name="tbg2" value="c2r2"></div>
+                <div><input type="checkbox" name="tbg2" value="c3r2"></div>
+                <div>Row 3</div>
+                <div><input type="checkbox" name="tbg3" value="c1r3" required></div>
+                <div><input type="checkbox" name="tbg3" value="c2r3"></div>
+                <div><input type="checkbox" name="tbg3" value="c3r3"></div>
+            </div>
+        </div>
+
+        <div class="flex_item" style="background-color: #f0ebf8;">
+            <input type="Submit" value="Submit">
+        </div>
+    </div>
+    </form>
+	<script src="index.js"></script>
+  </body>
+</html>
